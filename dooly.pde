@@ -1,9 +1,3 @@
-<html>
-<head>
-<script src="processing.min.js"></script>
-</head>
-<body>
-<script type="application/processing" data-processing-target="pjs">
 import java.util.Iterator;
 abstract class BodyPart{
   private float cx;
@@ -82,7 +76,7 @@ float gravity=0.2;
 float speed=0;
 float y;
 void setup(){
-  size(1200,800);
+  size(1000,1000);
   noStroke();
   doolies.add(new Dooly(250,250,1.5));
 }
@@ -127,7 +121,3 @@ void keyPressed(){
     }
   }
 }
-</script>
-<canvas id="pjs"> </canvas>
-</body>
-</html>
